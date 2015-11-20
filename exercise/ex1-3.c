@@ -9,11 +9,11 @@ int main(int argc, char *argv[])
 {
     int fahr = LOWER;
     float celsius = 0.0;
-
+    printf("\t\t\t华氏温度,摄氏温度对照表\n");
     for ( ; fahr <= UPPER; fahr += STEP) {
         celsius = unitcelsius(fahr);
 
-        printf("华氏%3d°  摄氏%3.1f°\n",fahr,celsius);
+        printf("\t\t\t  华氏%3d°  摄氏%3.1f°\n",fahr,celsius);
     }
 
     return 0;
